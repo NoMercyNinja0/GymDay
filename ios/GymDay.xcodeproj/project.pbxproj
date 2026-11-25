@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0007B475E8EADEE95D1817C3 = {isa = PBXBuildFile; fileRef = 239F92B252796D383C611859; };
+		01599CCCFE0D9DE92566E876 = {isa = PBXBuildFile; fileRef = 6F566503663863655405395E; };
+		0EFD90C62D34F3F9F5C3DAD9 = {isa = PBXBuildFile; fileRef = E91CFEF06AACAD3984A18B7B; };
+		1591F987E4CCF00EBD9663B3 = {isa = PBXBuildFile; fileRef = 0EEB0794AB5AF8F36DDF0BC4; };
+		16C53F7033A15AC473517360 = {isa = PBXBuildFile; fileRef = 2719E30735A6152B8C081A88; };
+		1A2F082403C41AC3A37763BF = {isa = PBXBuildFile; fileRef = FB40667268EE492DDF65D244; };
+		1BD6A67D7BB5F6B6344946E0 = {isa = PBXBuildFile; fileRef = 4D1D7FEFA6350AE8C35288D1; };
+		1E1A92FC5E38249ED8B373B6 = {isa = PBXBuildFile; fileRef = 9ED9D56FBCED35C6DFEB00D5; };
+		289C6DEF7E85EBCFE79381D7 = {isa = PBXBuildFile; fileRef = DBEF39D656486A5C7073707D; };
+		3040ECC3559045DC942AAFF7 = {isa = PBXBuildFile; fileRef = 80F0EEAE9EFB42EFF7F6D304; };
+		340313073E9955CF7567394C = {isa = PBXBuildFile; fileRef = ACF28C61210B3B779ABE4758; };
+		4B3D3CF205416B047498D6C0 = {isa = PBXBuildFile; fileRef = 3E74362ECECB8BCAD190DDED; };
+		57CE04A4EEA388A696E29366 = {isa = PBXBuildFile; fileRef = CCF6F9924E5FE4C74CF78983; };
+		5C458BB3C800274D33FDAAFD = {isa = PBXBuildFile; fileRef = CE46F655DEE454F7C0A50796; };
+		5DAA00BCBA4DD0B9CF9D7D0F = {isa = PBXBuildFile; fileRef = D595D04B450735B7A6585312; };
+		633C3930269985E9043722DB = {isa = PBXBuildFile; fileRef = 22A7EE18682E66EC0879B76B; };
+		681220974279DFEC8C2ECCB5 = {isa = PBXBuildFile; fileRef = 8DE2764F6CB4E7943C430FE2; settings = {
+	ATTRIBUTES = (
+		RemoveHeadersOnCopy,
+	);
+}; };
+		6A39AEFFBC7A08AD97CFA1ED = {isa = PBXBuildFile; fileRef = 5908BAE33666513345CAF8F6; settings = {
+	ATTRIBUTES = (
+		RemoveHeadersOnCopy,
+	);
+}; };
+		7B6883000342AEC1034D127A = {isa = PBXBuildFile; fileRef = 6F566503663863655405395E; };
+		80BC8FCB9E3BF0FDA784A245 = {isa = PBXBuildFile; fileRef = 4A0D8259E9DC890D3E3E8B87; };
+		92C6134891F849F1DAB2A2EB = {isa = PBXBuildFile; fileRef = 80F0EEAE9EFB42EFF7F6D304; };
+		AA5612E1948E1C9C5C485D05 = {isa = PBXBuildFile; fileRef = BF51D29000CAA026E4048B39; };
+		AC23865D67B079443330ECFB = {isa = PBXBuildFile; fileRef = D9A2374830ABC4E90614E841; };
+		BBD722D236FCA336F0A81E94 = {isa = PBXBuildFile; fileRef = ACF28C61210B3B779ABE4758; };
+		BF052511F4973AD08C2E4DAC = {isa = PBXBuildFile; fileRef = F0DE8F32DE5A461880759D2D; };
+		C81687267BAF91D4D62AFA60 = {isa = PBXBuildFile; fileRef = 6E75B00A6B3CB5EF74BC9A70; };
+		CEB5DF01DCD6082CDEFFEDBB = {isa = PBXBuildFile; fileRef = BE3DD798CEA80CEBFB5C14EB; };
+		D4F6AC6B1E3936D34BCBF5E5 = {isa = PBXBuildFile; fileRef = 0F22FE66DFB33F0CA458B06F; };
+		DDD9C8305F00C302D70E67B7 = {isa = PBXBuildFile; fileRef = AB47B1BD6339E3961FB1A6FB; };
+		ED4185DFA781C89D1BABFC48 = {isa = PBXBuildFile; fileRef = 620EF64523A6FF7888CF9974; };
+		F071EB4B838BD7C17DD1510E = {isa = PBXBuildFile; fileRef = 0EEB0794AB5AF8F36DDF0BC4; };
+		FCFAA2E14BC93DB1D7659A99 = {isa = PBXBuildFile; fileRef = 80F0EEAE9EFB42EFF7F6D304; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52713FADE166008A48E5835A = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595;
+			proxyType = 1;
+			remoteGlobalIDString = 7CBBC2D8152BF78FD3F0C7CF;
+			remoteInfo = GymDayShare;
+		};
+		79A4715A4B1863A6CFDD977D = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595;
+			proxyType = 1;
+			remoteGlobalIDString = 1D97F854D0649EF8DD2EAA5C;
+			remoteInfo = GymDayWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B06D12748DFDA56D9BA376A8 = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				681220974279DFEC8C2ECCB5,
+				6A39AEFFBC7A08AD97CFA1ED,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		024F2E49B63EA551B5F9B052 = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymDay.entitlements; sourceTree = "<group>"; };
+		0EEB0794AB5AF8F36DDF0BC4 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intents.swift; sourceTree = "<group>"; };
+		0F22FE66DFB33F0CA458B06F = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		22A7EE18682E66EC0879B76B = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWorkout.swift; sourceTree = "<group>"; };
+		239F92B252796D383C611859 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2719E30735A6152B8C081A88 = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		35E287EA411108EF2764FB5B = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymDayShare.entitlements; sourceTree = "<group>"; };
+		3E74362ECECB8BCAD190DDED = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		4A0D8259E9DC890D3E3E8B87 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D1D7FEFA6350AE8C35288D1 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		534B09939BF09C042A985536 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5908BAE33666513345CAF8F6 = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GymDayShare.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CAB61E4A8BF020AF3DF4E47 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		620EF64523A6FF7888CF9974 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A4DEE83B8F1DAB4E10510E1 = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6E75B00A6B3CB5EF74BC9A70 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWorkoutWidget.swift; sourceTree = "<group>"; };
+		6F566503663863655405395E = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Words.swift; sourceTree = "<group>"; };
+		80F0EEAE9EFB42EFF7F6D304 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		8DE2764F6CB4E7943C430FE2 = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GymDayWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9ED9D56FBCED35C6DFEB00D5 = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "ios-bridge.js"; sourceTree = "<group>"; };
+		AB47B1BD6339E3961FB1A6FB = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcuts.swift; sourceTree = "<group>"; };
+		ACF28C61210B3B779ABE4758 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutActivity.swift; sourceTree = "<group>"; };
+		BC4ABF937C7E53CC96A60F4A = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE3DD798CEA80CEBFB5C14EB = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		BF51D29000CAA026E4048B39 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		CCF6F9924E5FE4C74CF78983 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		CE46F655DEE454F7C0A50796 = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		D595D04B450735B7A6585312 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D9A2374830ABC4E90614E841 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemeHandler.swift; sourceTree = "<group>"; };
+		DBEF39D656486A5C7073707D = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		DCADA3C0882F6EED5A392322 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E276E992D8B60C58C9ABC862 = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymDayWidgets.entitlements; sourceTree = "<group>"; };
+		E91CFEF06AACAD3984A18B7B = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDayWidgets.swift; sourceTree = "<group>"; };
+		F0DE8F32DE5A461880759D2D = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		FB40667268EE492DDF65D244 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65099B7E19CC717F012E0D8B = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E08376F09A3A770D10C76C4 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EAFD7168D2958AFCF721258 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22EE43E5F9A80405E6DFEACD = {
+			isa = PBXGroup;
+			children = (
+				239F92B252796D383C611859,
+				4A0D8259E9DC890D3E3E8B87,
+				3E74362ECECB8BCAD190DDED,
+				CCF6F9924E5FE4C74CF78983,
+				024F2E49B63EA551B5F9B052,
+				BF51D29000CAA026E4048B39,
+				DCADA3C0882F6EED5A392322,
+				22A7EE18682E66EC0879B76B,
+				BE3DD798CEA80CEBFB5C14EB,
+				CE46F655DEE454F7C0A50796,
+				FB40667268EE492DDF65D244,
+				D595D04B450735B7A6585312,
+				D9A2374830ABC4E90614E841,
+				AB47B1BD6339E3961FB1A6FB,
+				4D1D7FEFA6350AE8C35288D1,
+				9ED9D56FBCED35C6DFEB00D5,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		25F946B2520370CD8F6A5ED2 = {
+			isa = PBXGroup;
+			children = (
+				620EF64523A6FF7888CF9974,
+				E276E992D8B60C58C9ABC862,
+				E91CFEF06AACAD3984A18B7B,
+				534B09939BF09C042A985536,
+				6E75B00A6B3CB5EF74BC9A70,
+				2719E30735A6152B8C081A88,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		55C88A25E026F3DA18BECA41 = {
+			isa = PBXGroup;
+			children = (
+				22EE43E5F9A80405E6DFEACD,
+				25F946B2520370CD8F6A5ED2,
+				CB555C1AD20A21D05F53DDE5,
+				C64F91A36BC1DFFBFBF7BCE4,
+				0F22FE66DFB33F0CA458B06F,
+				6A4DEE83B8F1DAB4E10510E1,
+				9CD67426B0A52D111E15E078,
+			);
+			sourceTree = "<group>";
+		};
+		9CD67426B0A52D111E15E078 = {
+			isa = PBXGroup;
+			children = (
+				5CAB61E4A8BF020AF3DF4E47,
+				8DE2764F6CB4E7943C430FE2,
+				5908BAE33666513345CAF8F6,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C64F91A36BC1DFFBFBF7BCE4 = {
+			isa = PBXGroup;
+			children = (
+				80F0EEAE9EFB42EFF7F6D304,
+				0EEB0794AB5AF8F36DDF0BC4,
+				6F566503663863655405395E,
+				ACF28C61210B3B779ABE4758,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CB555C1AD20A21D05F53DDE5 = {
+			isa = PBXGroup;
+			children = (
+				35E287EA411108EF2764FB5B,
+				BC4ABF937C7E53CC96A60F4A,
+				DBEF39D656486A5C7073707D,
+				F0DE8F32DE5A461880759D2D,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D97F854D0649EF8DD2EAA5C = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E39D93E3472C462D3EC43321;
+			buildPhases = (
+				3860965AAF32828C58398451,
+				9E08376F09A3A770D10C76C4,
+				8CB7B0348CD7A7DC6F6B3799,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymDayWidgets;
+			productName = GymDayWidgets;
+			productReference = 8DE2764F6CB4E7943C430FE2;
+			productType = "com.apple.product-type.app-extension";
+		};
+		7CBBC2D8152BF78FD3F0C7CF = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA71379B1ED6A6B39575CE1D;
+			buildPhases = (
+				6CD32F0454C9F96805C04A72,
+				65099B7E19CC717F012E0D8B,
+				662486497BCD6E2AD7766AFF,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymDayShare;
+			productName = GymDayShare;
+			productReference = 5908BAE33666513345CAF8F6;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E865F7B349E6DEDDEB930831 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FD75D1865721D62E1E62B43;
+			buildPhases = (
+				9084BF5FFD01086F930FB4D4,
+				9EAFD7168D2958AFCF721258,
+				A5BAAFBA9B63A0B436E722D1,
+				B06D12748DFDA56D9BA376A8,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A8C3BEAD23E85213B5B1C07,
+				76F6A248462429506F3DD1B8,
+			);
+			name = GymDay;
+			productName = GymDay;
+			productReference = 5CAB61E4A8BF020AF3DF4E47;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2720;
+				TargetAttributes = {
+					E865F7B349E6DEDDEB930831 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					1D97F854D0649EF8DD2EAA5C = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					7CBBC2D8152BF78FD3F0C7CF = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = B417DD1A170C27D6DF406627;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55C88A25E026F3DA18BECA41;
+			productRefGroup = 9CD67426B0A52D111E15E078;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E865F7B349E6DEDDEB930831,
+				1D97F854D0649EF8DD2EAA5C,
+				7CBBC2D8152BF78FD3F0C7CF,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		662486497BCD6E2AD7766AFF = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				289C6DEF7E85EBCFE79381D7,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CB7B0348CD7A7DC6F6B3799 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4185DFA781C89D1BABFC48,
+				16C53F7033A15AC473517360,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BAAFBA9B63A0B436E722D1 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80BC8FCB9E3BF0FDA784A245,
+				1E1A92FC5E38249ED8B373B6,
+				5C458BB3C800274D33FDAAFD,
+				D4F6AC6B1E3936D34BCBF5E5,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3860965AAF32828C58398451 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C6134891F849F1DAB2A2EB,
+				F071EB4B838BD7C17DD1510E,
+				01599CCCFE0D9DE92566E876,
+				BBD722D236FCA336F0A81E94,
+				0EFD90C62D34F3F9F5C3DAD9,
+				C81687267BAF91D4D62AFA60,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CD32F0454C9F96805C04A72 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF052511F4973AD08C2E4DAC,
+				FCFAA2E14BC93DB1D7659A99,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9084BF5FFD01086F930FB4D4 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0007B475E8EADEE95D1817C3,
+				4B3D3CF205416B047498D6C0,
+				57CE04A4EEA388A696E29366,
+				AA5612E1948E1C9C5C485D05,
+				633C3930269985E9043722DB,
+				CEB5DF01DCD6082CDEFFEDBB,
+				1A2F082403C41AC3A37763BF,
+				5DAA00BCBA4DD0B9CF9D7D0F,
+				AC23865D67B079443330ECFB,
+				DDD9C8305F00C302D70E67B7,
+				1BD6A67D7BB5F6B6344946E0,
+				3040ECC3559045DC942AAFF7,
+				1591F987E4CCF00EBD9663B3,
+				7B6883000342AEC1034D127A,
+				340313073E9955CF7567394C,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A8C3BEAD23E85213B5B1C07 = {
+			isa = PBXTargetDependency;
+			target = 1D97F854D0649EF8DD2EAA5C;
+			targetProxy = 79A4715A4B1863A6CFDD977D;
+		};
+		76F6A248462429506F3DD1B8 = {
+			isa = PBXTargetDependency;
+			target = 7CBBC2D8152BF78FD3F0C7CF;
+			targetProxy = 52713FADE166008A48E5835A;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04FEDF5A845CCBC1F9D469D1 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				GD_ROOT = app.gymday;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		368E95E7219638EA0C2444C2 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widgets/GymDayWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 60;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				MARKETING_VERSION = 1.35.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GD_ROOT).widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				ENABLE_PREVIEWS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				SKIP_INSTALL = YES;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+			};
+			name = Release;
+		};
+		36C65468DCD7F041646A9123 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Share/GymDayShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 60;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Share/Info.plist;
+				MARKETING_VERSION = 1.35.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GD_ROOT).share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				ENABLE_PREVIEWS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				SKIP_INSTALL = YES;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+			};
+			name = Release;
+		};
+		48F3D7DC62B4B8078CC6A59F = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				GD_ROOT = app.gymday.dev;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B2CE1464C30B29031182BFA = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = App/GymDay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 60;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				MARKETING_VERSION = 1.35.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GD_ROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				ENABLE_PREVIEWS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+			};
+			name = Release;
+		};
+		924CF5C8180122D12C592DBE = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = App/GymDay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 60;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = App/Info.plist;
+				MARKETING_VERSION = 1.35.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GD_ROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				ENABLE_PREVIEWS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+			};
+			name = Debug;
+		};
+		C1B3892E846A369282C61A1E = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Share/GymDayShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 60;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Share/Info.plist;
+				MARKETING_VERSION = 1.35.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GD_ROOT).share";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				ENABLE_PREVIEWS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				SKIP_INSTALL = YES;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+			};
+			name = Debug;
+		};
+		F00BF4070968B3229702AAB9 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widgets/GymDayWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 60;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Widgets/Info.plist;
+				MARKETING_VERSION = 1.35.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GD_ROOT).widgets";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+				ENABLE_PREVIEWS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				SKIP_INSTALL = YES;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FD75D1865721D62E1E62B43 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				924CF5C8180122D12C592DBE,
+				5B2CE1464C30B29031182BFA,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B417DD1A170C27D6DF406627 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F3D7DC62B4B8078CC6A59F,
+				04FEDF5A845CCBC1F9D469D1,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E39D93E3472C462D3EC43321 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F00BF4070968B3229702AAB9,
+				368E95E7219638EA0C2444C2,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA71379B1ED6A6B39575CE1D = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1B3892E846A369282C61A1E,
+				36C65468DCD7F041646A9123,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595;
+}

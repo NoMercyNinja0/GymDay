@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>GymDay</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>GDAppGroup</key>
+	<string>group.$(GD_ROOT)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>app.gymday</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>gymday</string>
+			</array>
+		</dict>
+	</array>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.healthcare-fitness</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>GymDay uses the camera for meal photos, packet labels, barcodes and your exercise setup photos.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>GymDay lets you pick meal photos, labels and screenshots from your photos.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>GymDay saves workout and progress pictures you choose to share to your photos.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>GymDay listens when you tap the microphone to log food or a set by voice.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>GymDay turns what you say into text when you log food or a set by voice.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>GymDay reads your heart rate, calories, steps, sleep, body weight and workouts from Apple Health to show them with your workouts and your day. Only when you turn this on.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>GymDay can save each finished workout to Apple Health, only when you turn this on in Settings.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>GymDay can ask for Face ID before it opens, only when you turn this on in Settings.</string>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>app.gymday.start</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Start workout</string>
+			<key>UIApplicationShortcutItemIconSymbolName</key>
+			<string>figure.strengthtraining.traditional</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>app.gymday.mealphoto</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Meal photo</string>
+			<key>UIApplicationShortcutItemIconSymbolName</key>
+			<string>camera</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>app.gymday.food</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Add food</string>
+			<key>UIApplicationShortcutItemIconSymbolName</key>
+			<string>fork.knife</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>app.gymday.weight</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Log body weight</string>
+			<key>UIApplicationShortcutItemIconSymbolName</key>
+			<string>scalemass</string>
+		</dict>
+	</array>
+	<key>UILaunchScreen</key>
+	<dict>
+		<key>UIColorName</key>
+		<string>LaunchBackground</string>
+	</dict>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+</dict>
+</plist>

@@ -1,0 +1,34 @@
+# Signing keys and passwords: never commit these
+*.jks
+*.keystore
+*.p12
+*.pem
+*.mobileprovision
+keystore.properties
+
+# Android / Gradle
+local.properties
+.gradle/
+build/
+*.apk
+*.aab
+.idea/
+*.iml
+captures/
+.cxx/
+
+# iPhone
+ios/www/
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.tgz
+
+# Server
+node_modules/
+.env
+.env.local
+supabase/.temp/
+
+# Mac
+.DS_Store

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GymDay</string>
+    <!-- long-press shortcuts on the app icon: the short label is used where space is tight -->
+    <string name="sc_start_short">Start workout</string>
+    <string name="sc_start_long">Start today\'s workout</string>
+    <string name="sc_weight_short">Log weight</string>
+    <string name="sc_weight_long">Log body weight</string>
+    <string name="sc_food_short">Add food</string>
+    <string name="sc_food_long">Add food eaten</string>
+    <!-- v1.20: the Food widget -->
+    <string name="widget_food_desc">Today\'s calories and protein, and Add food</string>
+    <!-- v1.27: the name in Android's share sheet -->
+    <string name="share_label">GymDay meal photo</string>
+    <string name="widget_today_desc">Today\'s readiness, calories left and your next workout</string>
+    <!-- 1.28: Quick Settings tiles -->
+    <string name="tile_meal">Meal photo</string>
+    <string name="tile_food">Add food</string>
+</resources>

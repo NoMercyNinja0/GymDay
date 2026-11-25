@@ -1,0 +1,11 @@
+{
+  "name": "gymday-server-tests",
+  "private": true,
+  "description": "Tests for GymDay's Supabase setup and Edge Function",
+  "scripts": {
+    "test": "node test_sql.js && node test_sql18.js && node --experimental-strip-types test_fn.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.16"
+  }
+}

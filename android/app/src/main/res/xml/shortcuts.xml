@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Long-press the GymDay icon. Start opens today's day ready to start (the next one in your list when there is no weekly plan). -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:shortcutId="start" android:enabled="true" android:icon="@drawable/sc_start"
+        android:shortcutShortLabel="@string/sc_start_short" android:shortcutLongLabel="@string/sc_start_long">
+        <intent android:action="app.gymday.START" android:targetPackage="app.gymday" android:targetClass="app.gymday.MainActivity">
+            <extra android:name="day" android:value="today" />
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="weight" android:enabled="true" android:icon="@drawable/sc_weight"
+        android:shortcutShortLabel="@string/sc_weight_short" android:shortcutLongLabel="@string/sc_weight_long">
+        <intent android:action="app.gymday.GO" android:targetPackage="app.gymday" android:targetClass="app.gymday.MainActivity">
+            <extra android:name="to" android:value="weight" />
+        </intent>
+    </shortcut>
+    <shortcut android:shortcutId="food" android:enabled="true" android:icon="@drawable/sc_food"
+        android:shortcutShortLabel="@string/sc_food_short" android:shortcutLongLabel="@string/sc_food_long">
+        <intent android:action="app.gymday.GO" android:targetPackage="app.gymday" android:targetClass="app.gymday.MainActivity">
+            <extra android:name="to" android:value="food" />
+        </intent>
+    </shortcut>
+</shortcuts>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Heart rate and calories from the watch, through Health Connect. -->
+    <uses-permission android:name="android.permission.health.READ_HEART_RATE" />
+    <uses-permission android:name="android.permission.health.READ_ACTIVE_CALORIES_BURNED" />
+    <uses-permission android:name="android.permission.health.READ_TOTAL_CALORIES_BURNED" />
+    <uses-permission android:name="android.permission.health.READ_WEIGHT" />
+    <!-- 1.24, "automatic from your watch" (off until switched on in Settings; read only): the day's steps, last night's sleep,
+         and the night's resting heart rate, HRV, blood oxygen and breathing. -->
+    <uses-permission android:name="android.permission.health.READ_STEPS" />
+    <uses-permission android:name="android.permission.health.READ_SLEEP" />
+    <uses-permission android:name="android.permission.health.READ_RESTING_HEART_RATE" />
+    <uses-permission android:name="android.permission.health.READ_HEART_RATE_VARIABILITY" />
+    <uses-permission android:name="android.permission.health.READ_OXYGEN_SATURATION" />
+    <uses-permission android:name="android.permission.health.READ_RESPIRATORY_RATE" />
+    <!-- Write: only when turned on in Settings, each finished workout as an exercise session. -->
+    <uses-permission android:name="android.permission.health.WRITE_EXERCISE" />
+    <!-- 1.28: "forgot to log?" reads the gym sessions a watch recorded, to offer them as estimated workouts -->
+    <uses-permission android:name="android.permission.health.READ_EXERCISE" />
+    <!-- The running workout on the lock screen and (Android 16) in the capsule at the top; gym reminders. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.POST_PROMOTED_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Keeps the app in memory while a workout runs, so the buttons on the card and the widget keep working. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <!-- Optional fingerprint lock. -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <!-- Android 13 and older: lets the app see whether the Health Connect app is installed -->
+    <queries>
+        <package android:name="com.google.android.apps.healthdata" />
+        <!-- v1.20: voice logging uses the phone's own speech recogniser (Google), so no microphone permission is needed here -->
+        <intent>
+            <action android:name="android.speech.action.RECOGNIZE_SPEECH" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GymDay"
+        android:enableOnBackInvokedCallback="true">
+        <!-- v1.8: a photo taken with the camera for a packet label is kept in the app's cache and handed over through this -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden|uiMode"
+            android:windowSoftInputMode="adjustResize"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- long-press the app icon: Start workout, Log body weight, Add food -->
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
+            <!-- an invite link: gymday://join/ABC123 opens the app and offers to join that club -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="gymday" android:host="join" />
+            </intent-filter>
+            <!-- v1.27: a photo shared from the gallery or another app opens as a meal photo -->
+            <intent-filter android:label="@string/share_label">
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <!-- Health Connect asks every app that reads health data to explain why; these open that explanation. -->
+            <intent-filter>
+                <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name="ViewPermissionUsageActivity"
+            android:exported="true"
+            android:targetActivity=".MainActivity"
+            android:permission="android.permission.START_VIEW_PERMISSION_USAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE" />
+                <category android:name="android.intent.category.HEALTH_PERMISSIONS" />
+            </intent-filter>
+        </activity-alias>
+
+        <receiver android:name=".ReminderReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Buttons on the workout card and the widget: Tick set, Next exercise, Pause, Resume, Finish. -->
+        <receiver android:name=".ActionReceiver" android:exported="false" />
+
+        <service android:name=".WorkoutService" android:exported="false" android:foregroundServiceType="specialUse">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Shows the running workout with its timer and its Tick set, Next, Pause and Finish buttons" />
+        </service>
+
+        <!-- v1.20: supplement reminders and the evening protein reminder; set again after a restart or an update -->
+        <receiver android:name=".Nudges" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- v1.25: the morning brief (one notification a day at the chosen time); set again after a restart or an update -->
+        <receiver android:name=".Brief" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- v1.27: the evening wrap-up, set again after a restart or an update -->
+        <receiver android:name=".Wrap" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- v1.25: the Today widget (readiness, calories left, next workout) -->
+        <!-- 1.28: Quick Settings tiles: "Meal photo" and "Add food" -->
+        <service android:name=".GoTile$Meal" android:exported="true" android:label="@string/tile_meal" android:icon="@drawable/ic_tile_meal"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        <service android:name=".GoTile$Food" android:exported="true" android:label="@string/tile_food" android:icon="@drawable/ic_tile_food"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".TodayWidget" android:exported="false" android:label="GymDay today">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_today_info" />
+        </receiver>
+
+        <!-- v1.20: the Food widget -->
+        <receiver android:name=".FoodWidget" android:exported="false" android:label="GymDay food">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_food_info" />
+        </receiver>
+
+        <receiver android:name=".WeekWidget" android:exported="false" android:label="GymDay">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_week_info" />
+        </receiver>
+    </application>
+</manifest>
