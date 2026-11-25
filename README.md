@@ -10,6 +10,17 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/NoMercyNinja0/GymDay/actions/workflows/tests.yml"><img src="https://github.com/NoMercyNinja0/GymDay/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
+  <a href="https://github.com/NoMercyNinja0/GymDay/actions/workflows/ios.yml"><img src="https://github.com/NoMercyNinja0/GymDay/actions/workflows/ios.yml/badge.svg" alt="iPhone build"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/licence-MIT-blue" alt="Licence: MIT"></a>
+  <img src="https://img.shields.io/badge/platforms-Android%20%7C%20iPhone-informational" alt="Platforms: Android and iPhone">
+</p>
+
+<p align="center">
+  <b>Status:</b> the iPhone app is in App Store review, and the Android app is coming to Google Play.
+</p>
+
+<p align="center">
   <img src="docs/screenshots/today.jpg" width="200" alt="Today screen">
   <img src="docs/screenshots/session.jpg" width="200" alt="A workout in progress">
   <img src="docs/screenshots/food.jpg" width="200" alt="Food log">
@@ -53,6 +64,8 @@ GymDay is one web app (plain HTML, CSS and JavaScript, no framework) that runs i
 | AI photo reading | `server/functions/gd-meal-photo` | Anthropic's Claude API, called only from the server |
 
 Everything is saved on the phone first. With an account, a copy is kept on the server and clubs work.
+
+Every push is checked on GitHub: the Android app is built and its unit tests run, the server's tests run, the page's scripts are checked, and the iPhone app is built for the simulator.
 
 ## Folder layout
 
@@ -113,6 +126,14 @@ cd server
 npm install
 node test_sql.js && node test_sql18.js && node --experimental-strip-types test_fn.mjs
 ```
+
+## Version history
+
+GymDay went from its first build to the stores in eleven days. Every version is in [CHANGELOG.md](CHANGELOG.md).
+
+## Contributing
+
+Bug reports, ideas and small fixes are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). Security problems go by email: see [SECURITY.md](SECURITY.md).
 
 ## Privacy
 

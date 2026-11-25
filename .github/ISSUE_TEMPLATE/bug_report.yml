@@ -1,0 +1,41 @@
+name: Bug report
+description: Something in GymDay doesn't work as it should
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen
+      placeholder: |
+        1. Open Food
+        2. Tap + and take a photo
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: phone
+    attributes:
+      label: Phone
+      options:
+        - Android
+        - iPhone
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: GymDay version
+      description: Settings → About GymDay
+      placeholder: "1.35.2"
+  - type: textarea
+    id: shots
+    attributes:
+      label: Screenshots
+      description: Drag pictures in here if they help. Hide anything personal first.

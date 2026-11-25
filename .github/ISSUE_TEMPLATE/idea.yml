@@ -1,0 +1,26 @@
+name: Idea
+description: Suggest something new for GymDay
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you like GymDay to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it would help
+      description: When would you use it, in the gym or with food?
+  - type: dropdown
+    id: area
+    attributes:
+      label: Part of the app
+      options:
+        - Workouts
+        - Food
+        - Watch and health
+        - Clubs
+        - Something else
