@@ -1,0 +1,97 @@
+# Builds the Android app and runs every test on each push and pull request.
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  android:
+    name: Android app
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - uses: gradle/actions/setup-gradle@v5
+
+      - name: Install the Android 16 (API 36) platform
+        run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" > /dev/null
+
+      - name: Build the app and run its unit tests
+        working-directory: android
+        run: ./gradlew assembleDebug testDebugUnitTest --stacktrace
+
+      - name: Check the shipped page matches tools/bundle.py
+        run: |
+          python3 tools/bundle.py android/app/src/main/assets/www /tmp/www-from-python
+          diff -r /tmp/www-from-python android/app/build/www-bundle/www
+
+      - name: Keep the test report
+        if: always()
+        uses: actions/upload-artifact@v5
+        with:
+          name: android-test-report
+          path: android/app/build/reports/tests/
+          if-no-files-found: ignore
+
+      - name: Keep the debug app
+        uses: actions/upload-artifact@v5
+        with:
+          name: GymDay-debug-apk
+          path: android/app/build/outputs/apk/debug/*.apk
+          retention-days: 14
+
+  server:
+    name: Server
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Install the test tools
+        working-directory: server
+        run: npm install --no-audit --no-fund
+
+      - name: Database, sync, clubs and AI function tests
+        working-directory: server
+        run: npm test
+
+  scripts:
+    name: App scripts
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Install the JavaScript parser
+        run: npm install --no-save --no-audit --no-fund acorn
+
+      - name: Check every script can be joined safely
+        working-directory: android/app/src/main/assets/www
+        run: |
+          out=$(node ../../../../../../tools/shape.js)
+          echo "$out"
+          echo "$out" | grep -q "; 0 with something other"

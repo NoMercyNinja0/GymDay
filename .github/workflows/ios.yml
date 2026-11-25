@@ -1,0 +1,50 @@
+# Builds the iPhone app for the simulator (no signing needed) on each push and pull request.
+name: iPhone build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ios:
+    name: iPhone app
+    runs-on: macos-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - uses: gradle/actions/setup-gradle@v5
+
+      - name: Make the joined page (Android's bundleWww task)
+        working-directory: android
+        run: ./gradlew :app:bundleWww
+
+      - name: Copy it into the iPhone app
+        run: python3 ios/tools/make_www.py
+
+      - name: Build for the iPhone simulator
+        run: |
+          set -o pipefail
+          xcodebuild -version
+          xcodebuild build \
+            -project ios/GymDay.xcodeproj \
+            -scheme GymDay \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            | tail -n 40
